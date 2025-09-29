@@ -1,6 +1,6 @@
 name: labour_connect_full_app
 description: A labour and contractor management app
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.1.2
+  intl: ^0.19.0
   flutter_localizations:
     sdk: flutter
 
@@ -19,4 +20,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
   
