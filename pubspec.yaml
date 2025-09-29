@@ -1,6 +1,6 @@
 name: labour_connect_full_app
-description: A labour and contractor management app
-publish_to: "none"
+description: A labour and contractor management app (workers + contractors + admin)
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -9,11 +9,37 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # State management
   provider: ^6.1.2
-  intl: ^0.19.0
-  http: ^1.2.2
+
+  # For multi-language support
   flutter_localizations:
     sdk: flutter
+
+  # For in-app chat (text + voice support can use WebRTC later)
+  cloud_firestore: ^5.4.4
+  firebase_auth: ^5.3.2
+  firebase_core: ^3.6.0
+
+  # For payments / escrow (integration-ready)
+  http: ^1.2.2
+
+  # For notifications
+  firebase_messaging: ^15.1.2
+
+  # For GPS-based attendance
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+
+  # For face recognition / camera attendance (optional placeholder)
+  camera: ^0.11.0+2
+
+  # For file/image handling
+  image_picker: ^1.1.2
+
+  # For charts / analytics in admin dashboard
+  charts_flutter: ^0.12.0
 
 dev_dependencies:
   flutter_test:
@@ -21,6 +47,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
   
 
   
