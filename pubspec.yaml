@@ -1,0 +1,23 @@
+name: labour_connect
+description: Labour and contractor connection app
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.20.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
+  geolocator: ^10.2.0
+  geocoding: ^2.1.7
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
